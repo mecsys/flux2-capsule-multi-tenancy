@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: https://github.com/mecsys/flux2-capsule-multi-tenancy.git
+  url: ssh://git@github.com/mecsys/flux2-capsule-multi-tenancy
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1beta2
 kind: Kustomization
@@ -19,8 +19,7 @@ metadata:
   name: flux-system
   namespace: flux-system
 spec:
-  serviceAccountName: kustomize-controller
-  interval: 1m0s
+  interval: 10m0s
   path: ./clusters/staging
   prune: true
   sourceRef:
