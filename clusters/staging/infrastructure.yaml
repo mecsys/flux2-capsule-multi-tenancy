@@ -39,8 +39,6 @@ metadata:
   namespace: flux-system
 spec:
   serviceAccountName: kustomize-controller
-  dependsOn:
-    - name: capsule
   interval: 1m
   sourceRef:
     kind: GitRepository
