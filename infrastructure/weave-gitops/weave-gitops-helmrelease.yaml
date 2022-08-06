@@ -6,7 +6,7 @@ metadata:
   namespace: flux-system
 spec:
   serviceAccountName: helm-controller
-  releaseName: capsule
+  releaseName: weave-gitops
   chart:
     spec:
       chart: weave-gitops
