@@ -5,6 +5,8 @@ metadata:
   name: ww-gitops
   namespace: flux-system
 spec:
+  serviceAccountName: helm-controller
+  releaseName: capsule
   chart:
     spec:
       chart: weave-gitops
