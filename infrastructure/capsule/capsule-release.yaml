@@ -8,6 +8,11 @@ spec:
   releaseName: capsule
   chart:
     spec:
+      values:
+        resources:
+          limits:
+            cpu: 500m
+            memory: 512Mi
       chart: capsule
       sourceRef:
         kind: HelmRepository
