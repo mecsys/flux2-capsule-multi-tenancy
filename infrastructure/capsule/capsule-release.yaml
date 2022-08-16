@@ -13,8 +13,9 @@ spec:
         kind: HelmRepository
         name: clastix
   values:
-    resources:
-      limits:
-        cpu: 500m
-        memory: 512Mi
+    manager:
+      resources:
+        limits:
+          cpu: 500m
+          memory: 512Mi
   interval: 1m
