@@ -8,13 +8,13 @@ spec:
   releaseName: capsule
   chart:
     spec:
-      values:
-        resources:
-          limits:
-            cpu: 500m
-            memory: 512Mi
       chart: capsule
       sourceRef:
         kind: HelmRepository
         name: clastix
+  values:
+    resources:
+      limits:
+        cpu: 500m
+        memory: 512Mi
   interval: 1m
