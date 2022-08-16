@@ -17,5 +17,5 @@ spec:
       resources:
         limits:
           cpu: 1000m
-          memory: 1GMi
+          memory: 1Gi
   interval: 1m
